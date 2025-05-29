@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HEYBQUESTIONS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <audio id="backgroundMusic" loop>
+    <source src="sounds/sensual_music.mp3" type="audio/mp3">
+  </audio>
+  <button id="musicToggle">🔊</button>
+  <div id="menu">
+    <h1>HEYBQUESTIONS</h1>
+    <ul>
+      <li onclick="selectCategory('romantic')">❤️ Románticas</li>
+      <li onclick="selectCategory('spicy')">🔥 Picantes</li>
+      <li onclick="selectCategory('foreplay')">💋 La Previa</li>
+      <li onclick="selectCategory('positions')">🎲 Dados</li>
+    </ul>
+  </div>
+  <div id="game" style="display:none;">
+    <button id="backButton">⬅ Volver</button>
+    <div id="cardContainer"></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
