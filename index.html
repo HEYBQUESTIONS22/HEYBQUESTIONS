@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HEYBQUESTIONS</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">🔥 HEYBQUESTIONS 🔥</h1>
+
+    <!-- 🔀 Tarjetas -->
+    <div class="card-container">
+      <div id="card" class="card">Presiona "Siguiente" para empezar 💌</div>
+      <button id="nextCard">Siguiente</button>
+    </div>
+
+    <!-- 🎲 Dados de Poses -->
+    <div class="dice-container">
+      <div class="dice" id="dice">
+        <img id="poseImage" src="" alt="Pose" />
+        <div id="poseName"></div>
+      </div>
+      <button id="rollDice">Lanzar Dados</button>
+    </div>
+
+    <!-- 🔊 Música -->
+    <div class="music-controls">
+      <button id="toggleMusic">🔊 Música ON/OFF</button>
+    </div>
+  </div>
+
+  <audio id="backgroundMusic" loop>
+    <source src="sensual_music.mp3" type="audio/mpeg" />
+  </audio>
+
+  <script src="app.js"></script>
+</body>
+</html>
