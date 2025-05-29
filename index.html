@@ -1,5 +1,6 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,22 +8,19 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <audio id="backgroundMusic" loop>
-    <source src="sounds/sensual_music.mp3" type="audio/mp3">
-  </audio>
-  <button id="musicToggle">🔊</button>
   <div id="menu">
     <h1>HEYBQUESTIONS</h1>
     <ul>
-      <li onclick="selectCategory('romantic')">❤️ Románticas</li>
-      <li onclick="selectCategory('spicy')">🔥 Picantes</li>
-      <li onclick="selectCategory('foreplay')">💋 La Previa</li>
-      <li onclick="selectCategory('positions')">🎲 Dados</li>
+      <li onclick="startCategory('romanticas')">Románticas</li>
+      <li onclick="startCategory('picantes')">Picantes</li>
+      <li onclick="startCategory('previa')">La Previa</li>
+      <li onclick="startCategory('poses')">Dados de Poses</li>
     </ul>
   </div>
   <div id="game" style="display:none;">
-    <button id="backButton">⬅ Volver</button>
-    <div id="cardContainer"></div>
+    <button id="back">⬅ Volver</button>
+    <div id="card" class="card"></div>
+    <button id="next">Siguiente</button>
   </div>
   <script src="app.js"></script>
 </body>
