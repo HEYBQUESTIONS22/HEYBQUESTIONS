@@ -1,0 +1,68 @@
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: radial-gradient(circle at center, #1a1a1a 0%, #0d0d0d 100%);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+  background: rgba(40, 0, 50, 0.3);
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 0, 120, 0.3);
+  position: relative;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.8rem;
+  color: #ff69b4;
+  margin-bottom: 30px;
+}
+
+.menu button, .back-btn, #roll-dice {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  margin: 15px 0;
+  font-size: 1.2rem;
+  background: linear-gradient(145deg, #ff1493, #8b008b);
+  border: none;
+  border-radius: 12px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.menu button:hover, .back-btn:hover, #roll-dice:hover {
+  background: linear-gradient(145deg, #8b008b, #ff1493);
+}
+
+.hidden {
+  display: none;
+}
+
+.card {
+  margin-top: 30px;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.5s ease-in-out;
+  min-height: 120px;
+}
+
+#music-toggle {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 999;
+}
